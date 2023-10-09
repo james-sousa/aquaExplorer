@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(239, 246, 252);
+}
+
+.quiz-container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.level {
+    cursor: pointer;
+    background-color: #0288d1;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.level:hover {
+    background: #47cee6;
+    color: #222;
+}
+
+.questions {
+    display: none;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.questions h2 {
+    font-size: 18px;
+    margin: 0;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+    font-weight: 600;
+    text-align: justify;
+}
+
+.answer-buttons {
+    display: flex;
+}
+
+.answer-button {
+    flex: 1;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #2fa4e4;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.answer-button:hover:not([disabled]) {
+    background: #55cadf;
+    color: #222;
+}
+
+.answer:disabled {
+    cursor: no-drop;
+}
+
+#next-button {
+    background: #0288d1;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0; 
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    text-align: center; 
+    transition: background-color 0.3s;
+}
+
+#next-button:hover {
+    background: #0476b8; /* Cor diferente ao passar o mouse */
+}
+
+.correct {
+    background: #9aeabc;
+}
+
+.incorrect {
+    background: #ff9393;
+}

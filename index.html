@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz AquaExplorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+    <div class="start-container">
+        <h1>Quiz AquaExplorer</h1>
+        <button class="drop" id="water-drop" onclick="startQuiz()">
+            <div class="drop-txt">START</div>
+            
+        </button>
+    </div>
+
+    <script>
+        function startQuiz() {
+            document.getElementById("water-drop").classList.add("clicked");
+            setTimeout(function() {
+                window.location.href = "page_questions.html";
+            }, 1000);
+        }
+    </script>
+    <img src="images/back3.png" alt="Descrição da Imagem">
+</body>
+</html>
